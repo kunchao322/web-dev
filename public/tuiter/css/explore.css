@@ -4,7 +4,7 @@
 
 .wd-icon{
     font-size: 25px;
-    color: white;
+    color: RGB(29,161,242);
 }
 .wd-padding{
     padding-left: 16px;
@@ -12,7 +12,7 @@
 }
 
 .wd-box-padding{
-    padding: 13px;
+    padding: 16px;
     margin: 0px;
 }
 
@@ -23,6 +23,7 @@
 .wd-searchbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .wd-searchbar-input{
     width: 50%;
@@ -32,7 +33,6 @@
     background-color: darkgray;
     color: white;
 
-    float: left;
 }
 
 .wd-tab-unselected{
@@ -59,6 +59,8 @@
 .wd-topic{
     font-size: 13px;
     color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .wd-border-thin-solid{
