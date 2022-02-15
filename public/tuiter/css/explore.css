@@ -29,10 +29,11 @@
     width: 50%;
     border-radius: 50px;
     border-color: rgb(47, 51, 54) ;
-
-    background-color: darkgray;
     color: white;
+}
 
+.wd-btn-padding{
+    padding: 10px;
 }
 
 .wd-tab-unselected{
@@ -58,7 +59,7 @@
 
 .wd-topic{
     font-size: 13px;
-    color: white;
+    color: black;
     margin-top: 3px;
     margin-bottom: 3px;
 }
@@ -73,15 +74,14 @@
     right: 16px
 }
 
-
 .wd-publisher{
     font-size: 13px;
-    color: white;
+    color: black;
 }
 
 .wd-title{
     font-size: 20px;
-    color: white;
+    color: black;
 }
 .wd-float-left{
     float: left;
