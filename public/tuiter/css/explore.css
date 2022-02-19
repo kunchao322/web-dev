@@ -57,13 +57,13 @@
 /*}*/
 
 
-/*.wd-tab-selected{*/
-/*    padding: 16px;*/
-/*    font-size: 15px;*/
-/*    color: RGB(29, 161, 242);*/
-/*    border-bottom: RGB(29, 161, 242)  2px solid;*/
-/*    text-align: center;*/
-/*}*/
+.wd-tab-selected{
+    padding: 16px;
+    font-size: 15px;
+    color: RGB(29, 161, 242);
+    border-bottom: RGB(29, 161, 242)  2px solid;
+    text-align: center;
+}
 
 /*.wd-sub-topic{*/
 /*    font-size: 13px;*/
@@ -124,12 +124,17 @@
 /*    border-radius: 15px;*/
 /*}*/
 
-.has-search .form-control {
-    padding-left: 2.375rem;
-}
-
-@media (min-width: 600px) {
+@media (min-width: 100px) {
     .img-fluid {
         width: 100px; /* Add here the css you want to apply for screen of size 600px and up */
     }
 }
+
+.btn-primary.override-bs{
+    color: black;
+    background-color: grey;
+    border:none;
+    font-weight: bold;
+}
+
+.border-bottom.override-bs{border-bottom:3px solid #0a58ca!important;}
