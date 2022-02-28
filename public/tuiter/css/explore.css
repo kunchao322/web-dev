@@ -138,3 +138,8 @@
 }
 
 .border-bottom.override-bs{border-bottom:3px solid #0a58ca!important;}
+
+.img-thumbnail.override-bs{
+    border-width: 0px;
+    border-radius: 15px;
+}
