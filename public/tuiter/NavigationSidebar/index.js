@@ -4,7 +4,7 @@ const NavigationSidebar = () => {
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i></a>
             <!-- continue the rest of the list -->
-             <a class="list-group-item" href="/">
+             <a class="list-group-item" href="/public/tuiter/HomeScreen/home.html">
                     <i class="fa fa-home"></i><span class="ms-1">Home</span></a>
              <a class="list-group-item" href="/">
                     <i class="fa fa-hashtag"></i> <span class="ms-1">Explore</span></a>
