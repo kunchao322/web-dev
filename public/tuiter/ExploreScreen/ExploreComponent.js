@@ -34,7 +34,7 @@ const ExploreComponent = () => {
            </ul>
            <!-- image with overlaid text -->
            <li class="list-group-item bg-transparent border-0 mb-2 p-0 ">
-                <img src="images/spaceX.jpeg" width=100%>
+                <img src="../images/spaceX.jpeg" width=100%>
                 <div class="wd-bottom-left">SpaceX's Starship</div>
            </li>
            

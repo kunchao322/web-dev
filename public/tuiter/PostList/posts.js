@@ -7,7 +7,7 @@ export default [{
     commentQty: 57,
     shareQty: 82,
     likeQty: 18,
-    avatarIcon:'/public/tuiter/images/pug.jpg',
+    avatarIcon:'../images/pug.jpg',
     image:"/public/tuiter/images/banner.jpeg",
 }, {
     userName: "Jessika ducarme",
