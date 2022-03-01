@@ -8,7 +8,7 @@ export default [{
     shareQty: 82,
     likeQty: 18,
     avatarIcon:'../images/pug.jpg',
-    image:"/public/tuiter/images/banner.jpeg",
+    image:"../images/banner.jpeg",
 }, {
     userName: "Jessika ducarme",
     time: 18,
@@ -18,8 +18,8 @@ export default [{
     commentQty: 72,
     shareQty: 93,
     likeQty: 17,
-    avatarIcon:"/public/tuiter/images/nodejs.jpeg",
-    image:'/public/tuiter/images/hockey.jpeg',
+    avatarIcon:"../images/nodejs.jpeg",
+    image:'../images/hockey.jpeg',
 }, {
     userName: "Karyl Marzelli",
     time: 16,
@@ -29,6 +29,6 @@ export default [{
     commentQty: 59,
     shareQty: 28,
     likeQty: 7,
-    avatarIcon:"/public/tuiter/images/nodejs.jpeg",
-    image:'/public/tuiter/images/landscape.jpeg',
+    avatarIcon:"../images/nodejs.jpeg",
+    image:'../images/landscape.jpeg',
 }]
