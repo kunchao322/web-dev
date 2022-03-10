@@ -3,9 +3,9 @@ import React from "react";
 const ConditionalOutputIfElse = () =>{
     const loggedIn = true;
     if(loggedIn){
-        return<h2>Welcome If Else</h2>;
+        return (<h2>Welcome If Else</h2>);
     }else{
-        return <h2>Please log in If Else</h2>;
+        return (<h2>Please log in If Else</h2>);
     }
 }
 
