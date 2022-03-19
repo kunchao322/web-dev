@@ -1,14 +1,15 @@
 import PostSummaryList from "../PostSummaryList/index.js"
 
 const ExploreComponent = () => {
-    const bottomLeft = {
-        position: "absolute",
-        bottom: "16px",
-        left: "20px",
-        color: "white",
-        fontsize: "22px",
-        fontweight: "bold",
-    }
+  const cardText = {
+   position:"absolute",
+      top:"22",
+      right:"0",
+      bottom:"0",
+      left:"0",
+      padding:"1rem",
+  }
+
     return (
         <>
             <div className="row">
@@ -39,9 +40,15 @@ const ExploreComponent = () => {
                     <a className="nav-link d-none d-md-block text-secondary" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
-            <img src="./images/spaceX.jpeg" className="w-100"/>
-            <div style={bottomLeft}>
-                    SpaceX's Starship</div>
+            <div className="card" >
+                <img src="./images/spaceX.jpeg" className="w-100 card-img"/>
+                <div  style ={cardText}>
+                    <div className="fw-bold text-white fs-3  position-absolute-bottom-left">
+                        SpaceX's Starship</div>
+                </div>
+
+            </div>
+
             <PostSummaryList/>
         </>
 

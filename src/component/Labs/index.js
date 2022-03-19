@@ -10,7 +10,7 @@ function Index() {
         <>
             <h1>Labs</h1>
             <Link to='/hello/'>HelloWorld</Link> |
-            <Link to='/tuiter/'>Tuiter</Link>
+            <Link to='/tuiter/home'>Tuiter</Link>
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>
