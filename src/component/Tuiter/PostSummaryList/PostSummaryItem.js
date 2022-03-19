@@ -13,7 +13,7 @@ const PostSummaryItem = (
             <div className="list-group-item d-flex justify-content-between ">
                 <div className="col-10">
                     <div className="text-secondary">{post.topic}</div>
-                    <div className="text-white  fw-bold">{post.userName}<i className="fa fa-check-circle"></i><span
+                    <div className="text-white  fw-bold">{post.userName}<i className="fa fa-check-circle m-1"></i><span
                         className="text-secondary">-{post.time}</span>
                     </div>
                     <div className="text-white fw-bold">{post.title}

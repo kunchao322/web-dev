@@ -1,14 +1,14 @@
-import posts from "./posts.json"
-import PostSummaryItem from "./PostSummaryItem.js";
+import PostItem from "./PostItem.js";
+import posts from "./PostItems.json"
 
-const PostSummaryList = () => {
+const  PostList = () =>{
     return (
         <>
             <ul className="list-group">
                 {
                     posts.map(
                         post => {
-                            return (<PostSummaryItem post={post}/>);
+                            return <PostItem post={post}/>;
                         }
                     )
                 }
@@ -18,4 +18,4 @@ const PostSummaryList = () => {
     );
 }
 
-export default PostSummaryList;
+export default PostList;
