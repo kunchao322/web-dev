@@ -15,10 +15,8 @@ function App() {
                 <Route path="/" exact= {true} element = {<Labs/>}/>
                 <Route path="/tuiter" exact= {true}  element = {<Tuiter/>}/>
             </Routes>
-
         </div>
       </BrowserRouter>
-
   );
 }
 export default App;

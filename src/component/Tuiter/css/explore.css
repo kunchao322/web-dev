@@ -1,0 +1,145 @@
+/*.wd-font{*/
+/*    font-family: Arial, Helvetica, sans-serif;*/
+/*}*/
+
+/*.wd-font-size{*/
+/*    font-size: 15px;*/
+/*}*/
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*.wd-icon{*/
+/*    font-size: 22px;*/
+/*    color: RGB(29,161,242);*/
+/*}*/
+/*.wd-padding{*/
+/*    padding-left: 16px;*/
+/*    padding-right: 16px;*/
+/*}*/
+
+/*.wd-box-padding{*/
+/*    padding: 16px;*/
+/*    margin: 0px;*/
+/*}*/
+
+/*.wd-bg-color{*/
+/*    background-color: black;*/
+/*}*/
+
+/*.wd-searchbar{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*.wd-searchbar-input{*/
+/*    width: 50%;*/
+/*    border-radius: 50px;*/
+/*    border-color: rgb(47, 51, 54) ;*/
+/*    color: white;*/
+/*}*/
+
+/*.wd-btn-padding{*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.wd-tab-unselected{*/
+/*    padding: 16px;*/
+/*    font-size: 15px;*/
+/*    color: RGB(110, 118, 125);*/
+/*    text-align: center;*/
+/*}*/
+
+
+.wd-tab-selected{
+    padding: 16px;
+    font-size: 15px;
+    color: RGB(29, 161, 242);
+    border-bottom: RGB(29, 161, 242)  2px solid;
+    text-align: center;
+}
+
+/*.wd-sub-topic{*/
+/*    font-size: 13px;*/
+/*    color: RGB(110, 118, 125);*/
+/*}*/
+
+/*.wd-topic{*/
+/*    font-size: 13px;*/
+/*    color: black;*/
+/*    margin-top: 3px;*/
+/*    margin-bottom: 3px;*/
+/*}*/
+
+/*.wd-border-thin-solid{*/
+/*    border-style: solid ;*/
+/*    border-color: RGB(110, 118, 125);*/
+/*    border-width: 1px;*/
+/*}*/
+/*.wd-relative-position{*/
+/*    position: relative;*/
+/*    right: 16px*/
+/*}*/
+
+/*.wd-publisher{*/
+/*    font-family:  sans-serif;*/
+/*    font-size: 15px;*/
+/*    color: RGB(110, 118, 125);*/
+/*}*/
+
+/*.wd-title{*/
+/*    font-family: sans-serif;*/
+/*    font-size: 15px;*/
+/*    color: black;*/
+/*}*/
+
+/*.wd-float-left{*/
+/*    float: left;*/
+/*}*/
+
+/*.wd-float-right{*/
+/*    float: right;*/
+/*}*/
+
+/*.wd-avatar{*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+/*.wd-inline{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.wd-image-thumbnail{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+@media (min-width: 100px) {
+    .img-fluid {
+        width: 100px; /* Add here the css you want to apply for screen of size 600px and up */
+    }
+}
+
+.btn-primary.override-bs{
+    color: black;
+    background-color: grey;
+    border:none;
+    font-weight: bold;
+}
+
+.border-bottom.override-bs{border-bottom:3px solid #0a58ca!important;}
+
+.img-thumbnail.override-bs{
+    border-width: 0px;
+    border-radius: 15px;
+}

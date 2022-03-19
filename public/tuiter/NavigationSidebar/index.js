@@ -31,7 +31,7 @@ const NavigationSidebar = (active) => {
                         
         ${active === 'Messages' ?
         `<a class="list-group-item active" href="../messages.html">
-                    <i class="fa fa-envelope"></i> <span class="ms-1">Messages</span></a>`
+                    <i class="fa fa-envelope"></i> <span class="ms-1 ">Messages</span></a>`
         :
         `<a class="list-group-item" href="../messages.html">
                     <i class="fa fa-envelope"></i> <span class="ms-1">Messages</span></a>`

@@ -1,14 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import ExploreScreen from "./ExploreScreen/ExploreScreen"
 
-function Index(){
+const Tuiter = () =>{
     return (
-    <>
-        <h1>Tuiter</h1>
-        <Link to="/hello">HelloWorld</Link> |
-        <Link to="/"> Labs</Link>
-    </>
-    )
-}
+        <>
+            <ExploreScreen/>
+        </>
 
-export default Index;
+        )
+};
+
+export default Tuiter;

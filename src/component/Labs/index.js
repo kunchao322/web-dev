@@ -9,14 +9,13 @@ function Index() {
     return (
         <>
             <h1>Labs</h1>
-            <Link to='/hello'>HelloWorld</Link> |
-            <Link to='/tuiter'>Tuiter</Link>
+            <Link to='/hello/'>HelloWorld</Link> |
+            <Link to='/tuiter/'>Tuiter</Link>
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
         </>
-
     )
 }
 
