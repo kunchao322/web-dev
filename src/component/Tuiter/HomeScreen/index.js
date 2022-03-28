@@ -1,8 +1,9 @@
 import TuitList from "../tuit-list";
+import WhatsHappening from "../../WhatsHappening/whats-happening";
 const HomeScreen = () => {
     return(
         <div>
-            <h3>Home</h3>
+            <WhatsHappening/>
             <TuitList/>
         </div>
     )
