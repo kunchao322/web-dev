@@ -4,6 +4,8 @@ const whoReducer = (state = tuits,action) => {
     switch (action.type) {
         case 'like-tuit':
             return state.map(tuit => {
+                console.log('clicked delete ');
+                console.log(tuit);
                 if(tuit._id === action.tuit._id) {
                     if(tuit.liked === true) {
                         tuit.liked = false;
@@ -19,7 +21,7 @@ const whoReducer = (state = tuits,action) => {
             });
 
         case 'delete-tuit':
-            return state.filter(
+            return tuits.filter(
                 tuit => tuit._id !== action.tuit._id);
 
         case 'create-tuit':

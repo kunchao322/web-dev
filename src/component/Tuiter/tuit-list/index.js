@@ -9,7 +9,7 @@ const  TuitList = () =>{
                 {
                     tuits.map(
                         tuit => {
-                            return <TuitListItem post={tuit}/>;
+                            return <TuitListItem tuit={tuit}/>;
                         }
                     )
                 }
