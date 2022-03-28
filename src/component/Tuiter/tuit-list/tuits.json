@@ -1,34 +1,114 @@
-[{
-  "userName": "Loraine Suche",
-  "time": "17",
-  "content": "quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae",
-  "title": "Woodland Rush",
-  "details": "lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit",
-  "commentQty": "57",
-  "shareQty": "82",
-  "likeQty": "18",
-  "avatarIcon":"./images/pug.jpg",
-  "image":"./images/banner.jpeg"
-}, {
-  "userName": "Jessika ducarme",
-  "time": "18",
-  "content": "in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque",
-  "title": "Bristlyleaf Rockcress",
-  "details": "ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum",
-  "commentQty": "72",
-  "shareQty": "93",
-  "likeQty": "17",
-  "avatarIcon":"./images/nodejs.jpeg",
-  "image":"./images/hockey.jpeg"
-}, {
-  "userName": "Karyl Marzelli",
-  "time": "16",
-  "content": "ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi",
-  "title": "Club Lichen",
-  "details": "tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu",
-  "commentQty": "59",
-  "shareQty": "28",
-  "likeQty": "7",
-  "avatarIcon":"./images/nodejs.jpeg",
-  "image":"./images/landscape.jpeg"
-}]
+
+[
+  {
+    "_id": "123",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "ReactJS"
+    },
+    "liked": true,
+    "verified": false,
+    "handle": "ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "video": "unKvMC3Y1kI"
+    },
+    "logo-image": "../../../images/react-blue.png",
+    "avatar-image": "./images/react.png",
+    "stats": {
+      "comments": 13,
+      "retuits": 24,
+      "likes": 34
+    }
+  },
+  {
+    "_id": "567",
+    "topic": "Space",
+    "postedBy": {
+      "username": "SpaceX"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "spacex",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "../images/starship.png"
+    },
+    "time": "last month",
+    "logo-image": "../../../images/node.png",
+    "avatar-image": "./images/nodejs.jpeg",
+    "tuits": "120K",
+    "stats": {
+      "comments": 123,
+      "retuits": 24,
+      "likes": 35
+    }
+  },
+  {
+    "_id": "234",
+    "topic": "Space",
+    "postedBy": {
+      "username": "Scott Manley"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "DJSnM",
+    "postedOn": "2020-12-10",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "logo-image": "../../../images/js.png",
+    "avatar-image": "./images/js.png",
+    "tuits": "123K",
+    "stats": {
+      "comments": 3,
+      "retuits": 234,
+      "likes": 45
+    }
+  },
+  {
+    "_id": "345",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "jQuery"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "jQuery",
+    "title": "jQuery",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last week",
+    "logo-image": "../../../images/jquery.png",
+    "avatar-image": "./images/jquery.jpeg",
+    "tuits": "122K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "456",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "NodeJS"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "NodeJS",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last month",
+    "logo-image": "./images/node.png",
+    "avatar-image": "./images/nodejs.jpeg",
+    "tuits": "120K",
+    "stats": {
+      "comments": 1423,
+      "retuits": 54,
+      "likes": 32
+    }
+  }
+]
