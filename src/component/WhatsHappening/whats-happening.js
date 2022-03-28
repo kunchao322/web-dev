@@ -13,11 +13,11 @@ const WhatsHappening = () => {
 
     return (
         <>
-      <textarea value={whatsHappening}
+      <textarea className="w-100" value={whatsHappening}
                 onChange={(event) =>
                     setWhatsHappening(event.target.value)}>
       </textarea>
-            <button onClick={tuitClickHandler}>
+            <button className="btn-primary" onClick={tuitClickHandler}>
                 Tuit
             </button>
         </>

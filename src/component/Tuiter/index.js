@@ -1,12 +1,13 @@
 import tuitsReducer from "./reducers/tuits-reducer";
 import whoReducer from "./reducers/who-reducer";
+import profileReducer from "./reducers/profile-reducer";
 import {createStore, combineReducers} from "redux";
 import {Provider} from "react-redux";
 import {Outlet} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 
-const reducers = combineReducers({tuits: tuitsReducer, who: whoReducer})
+const reducers = combineReducers({tuits: tuitsReducer, who: whoReducer, profile:profileReducer})
 const store = createStore(reducers);
 
 const Tuiter = () => {
@@ -20,7 +21,6 @@ const Tuiter = () => {
                     <Outlet/>
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
-                    <h2>redux</h2>
                     <WhoToFollowList/>
                 </div>
             </div>

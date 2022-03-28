@@ -1,3 +1,6 @@
+import {useDispatch} from "react-redux";
+import TuitStats from "../TuitStats/tuit-stats";
+
 const TuitListItem = ({
                       post =  {
                           "_id": "123",
@@ -23,6 +26,15 @@ const TuitListItem = ({
                           }
                       }
                   }) =>{
+    const dispatch = useDispatch();
+    const deleteTuit = (post) => {
+        dispatch({type: 'delete-tuit', post})
+    };
+    const likeTuit = () => {
+        dispatch({type: 'like-tuit', post});
+    };
+
+
     const style1 = {
         border: "solid 0.5px gray"
     }
@@ -41,6 +53,15 @@ const TuitListItem = ({
         color: "palevioletred"
     }
 
+    let attachment = '';
+    if(post.hasOwnProperty("attachments")){
+        if(post.attachments.hasOwnProperty("image")){
+            attachment=post.attachments.image;
+        }else if(post.attachments.hasOwnProperty("video")){
+            attachment=post.attachments.video;
+        }
+    }
+
 return (
     <>
         <div className="list-group-item d-flex flex-wrap align-top p-2" style={style1}>
@@ -49,22 +70,26 @@ return (
             </div>
             <div className="col-11">
                 <ul className="list-group">
-
                     <li className="list-group-item bg-transparent border-0">
-                        <div>
+                        <div className="d-flex align-items-center  justify-content-between">
                             <div className=" fw-bold ">{post.postedBy.username}<i className="fa fa-check-circle ps-1"></i><span
                                 className="text-secondary ps-1">- {post.time}</span>
                             </div>
-                            <div className="text-white">
-                                {post.tuit}
-                            </div>
+                                <i onClick={() =>
+                                    deleteTuit(post)}
+                                   className=" fa fa-trash right-float
+
+                  "></i>
+                        </div>
+                        <div className="text-white">
+                            {post.tuit}
                         </div>
                     </li>
 
                     <li className="list-group-item bg-transparent border-0">
                         <div className="card border-1 bg-transparent" style={style2}>
                             <img className="card-img-top" style={style3}
-                                 src={post.attachments} alt="Card image cap"/> TODO
+                                 src={attachment} alt="Card image cap"/> TODO
                                 <div className="card-body ms-3 mb-3 me-3">
                                     <h5 className="card-title ">{post.title}</h5>
                                     <p className="card-text">{post.tuit}</p>
@@ -83,9 +108,19 @@ return (
                             <div className="ps-1">{post.stats.retuits}</div>
                         </div>
 
-                        <div className="d-flex wd-icons  align-items-center" href="#" style={highlightedIcon}>
-                            <i className="fa fa-heart"></i>
-                            <div className="ps-1">{post.stats.likes}</div>
+                        <div>
+                            <span onClick={likeTuit}>
+                                {
+                                    post.liked &&
+                                    <i className="fa fa-heart me-1"
+                                       style={highlightedIcon}></i>
+                                }
+                                {
+                                    !post.liked &&
+                                    <i className="fa fa-heart me-1"></i>
+                                }
+                                {post.stats && post.stats.likes}
+                             </span>
                         </div>
 
                         <div className="d-flex wd-icons align-items-center" href="#">
@@ -95,9 +130,19 @@ return (
                         </div>
                     </li>
 
+
+
                 </ul>
             </div>
+            {/*<div>*/}
+            {/*    <i onClick={() =>*/}
+            {/*        deleteTuit(post)}*/}
+            {/*       className="fa fa-trash*/}
+            {/*      "></i>*/}
+            {/*    </div>*/}
         </div>
+
+
     </>
 )
 }

@@ -27,8 +27,8 @@ const NavigationSidebar = ({active}) => {
                 <a className={`list-group-item ${active === 'Lists' ? 'active' : ''} align-items-center d-flex`} >
                     <i className="fa fa-list-ul"></i> <span className="ms-1  d-none d-lg-block ">Lists</span></a>
 
-                <a className={`list-group-item ${active === 'Profile' ? 'active' : ''} align-items-center d-flex`} >
-                    <i className="fa fa-user"></i> <span className="ms-1  d-none d-lg-block ">Profile</span></a>
+                <Link to={"/tuiter/profile"} className={`list-group-item ${active === 'Profile' ? 'active' : ''} align-items-center d-flex`} >
+                    <i className="fa fa-user"></i> <span className="ms-1  d-none d-lg-block ">Profile</span></Link>
 
                 <a className={`list-group-item ${active === 'Profile' ? 'active' : ''} align-items-center d-flex`} >
                     <i className="fa fa-bars"></i> <span className="ms-1 d-none d-lg-block ">More</span></a>
