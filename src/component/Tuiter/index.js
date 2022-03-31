@@ -1,6 +1,7 @@
 import tuitsReducer from "./reducers/tuits-reducer";
 import whoReducer from "./reducers/who-reducer";
 import profileReducer from "./reducers/profile-reducer";
+
 import {createStore, combineReducers} from "redux";
 import {Provider} from "react-redux";
 import {Outlet} from "react-router-dom";
