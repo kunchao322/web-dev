@@ -1,10 +1,10 @@
 import {useDispatch} from "react-redux";
 
-const TuitListItem = ({tuit}) =>{
+const TuitListItem = ({tuit, deleteTuit}) =>{
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+    // const deleteTuit = (tuit) => {
+    //     dispatch({type: 'delete-tuit', tuit})
+    // };
 
     const likeTuit = () => {
         dispatch({type: 'like-tuit', tuit});
@@ -119,10 +119,17 @@ return (
 
         <div className='list-group'>
             <div className='list-group-item'>
-                <div>{tuit._id}</div>
-                <div>{tuit.postedBy.username}</div>
-                <div>{tuit.tuit}</div>
-                <div>likes {tuit.likes}</div>
+                <div>
+                    <div>{tuit._id}</div>
+                    <div>{tuit.postedBy.username}</div>
+                    <div>{tuit.tuit}</div>
+                    <div>likes {tuit.likes}</div>
+                </div>
+
+                <i className="fa fa-trash float-end"
+                   onClick={() => deleteTuit(
+                       dispatch, tuit)}></i>
+
             </div>
         </div>
     </>
