@@ -121,7 +121,7 @@ return (
             <div className='list-group-item'>
                 <div>
                     <div>{tuit._id}</div>
-                    <div>{tuit.postedBy.username}</div>
+                    {/*<div>{tuit.postedBy.username}</div>*/}
                     <div>{tuit.tuit}</div>
                     <div>likes {tuit.likes}</div>
                 </div>
