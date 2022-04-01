@@ -130,6 +130,13 @@ return (
                         })} className="far fa-thumbs-up ms-2"></i>
                         Likes: {tuit.likes}
                     </div>
+                    <div>
+                        <i onClick={() => updateTuit(dispatch, {
+                            ...tuit,
+                            dislikes: tuit.dislikes + 1
+                        })} className="far fa-thumbs-down ms-2"></i>
+                        Dislikes: {tuit.dislikes}
+                    </div>
 
                 </div>
 
