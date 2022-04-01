@@ -1,6 +1,6 @@
 import {useDispatch} from "react-redux";
 
-const TuitListItem = ({tuit, deleteTuit}) =>{
+const TuitListItem = ({tuit, deleteTuit, updateTuit}) =>{
     const dispatch = useDispatch();
     // const deleteTuit = (tuit) => {
     //     dispatch({type: 'delete-tuit', tuit})
@@ -123,7 +123,14 @@ return (
                     <div>{tuit._id}</div>
                     {/*<div>{tuit.postedBy.username}</div>*/}
                     <div>{tuit.tuit}</div>
-                    <div>likes {tuit.likes}</div>
+                    <div>
+                        <i onClick={() => updateTuit(dispatch, {
+                            ...tuit,
+                            likes: tuit.likes + 1
+                        })} className="far fa-thumbs-up ms-2"></i>
+                        Likes: {tuit.likes}
+                    </div>
+
                 </div>
 
                 <i className="fa fa-trash float-end"

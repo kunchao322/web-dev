@@ -3,7 +3,7 @@ import WhatsHappening from "../../WhatsHappening/whats-happening";
 const HomeScreen = () => {
     return(
         <div>
-            <WhatsHappening/>
+            {/*<WhatsHappening/>*/}
             <TuitList/>
         </div>
     )
